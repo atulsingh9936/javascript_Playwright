@@ -76,3 +76,89 @@ let addtwonumbersarrow=(x,y)=>{
    }
 
    stringappend("Atul")
+
+
+   let sayHelloShortHand= str =>console.log("Hello"+str);
+
+
+   let sumoftwonumbers1=(x,y)=>(x+y);
+   let productoftwonumbers=(x,y)=>(x*y);
+
+
+
+   // anonymous function( the function without a name is call anonymous function)
+   // function can be stored
+// synchronous and async function
+console.log("ravi")
+const callingfunction=  setTimeout(function(){console.log("this is executed after 3 second")},3000)
+console.log("ramu")
+
+
+
+ // IIFE(immediately invoked function expression)
+
+
+ (function(){
+    console.log("this is IIFE")
+ })();
+
+ // call back function
+
+ // a function is passed as a parameter to another function, and that passed function can be executed later
+   function greet(name,callback){
+    console.log("hello"+name)
+    callback();
+   }
+
+ function sayBye(){
+    console.log("good bye");
+ }
+
+
+ greet("QA Masters",sayBye); // function calling 
+
+
+
+
+ function add(a, b) {
+  return a + b;
+}
+
+let result3 = add(5);
+console.log(result3);
+
+
+function test() {
+    console.log("Hello");
+  return;
+  
+}
+
+console.log(test());
+
+
+
+
+
+
+
+function checkEvenodd1(num){
+    return num%2===0? "even":"odd";
+}
+
+console.log(checkEvenodd1(5));
+
+
+
+function reverseString1(str){
+    let reverse="";
+    for(let i=str.length-1;i>=0;i--){
+        reverse+=str[i]
+}
+
+         return reverse;
+}
+console.log(reverseString1("Hello"));
+
+
+
